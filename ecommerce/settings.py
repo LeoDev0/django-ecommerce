@@ -120,6 +120,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Configura onde os arquivos estáticos estarão no projeto  
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+# Configura onde as imagens subidas no site cairão no projeto. Olhar também em 'urls.py' 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
+# Configura a url de exibição das mídias/images no projeto. Olhar também em 'urls.py'
+MEDIA_URL = '/images/'
